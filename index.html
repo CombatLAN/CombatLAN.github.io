@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Combat LAN v1.0</title>
+      <title>Combat LAN v2.0</title>
        <style>
            body {
            text-align: center;
-            background-image: url(background.jpg);
-            background-attachment: fixed;
-            background-size: cover;
-            background-repeat: no-repeat;
+           background-color: darkgrey;
+           
             
            }
            
@@ -26,13 +24,51 @@
            button {
            padding: 10px; 
            }
+        
+        * {
+margin: 0;
+padding: 0;
+}
        </style>
+               <link rel="stylesheet" href="assets/css/flipclock.css">
+
    </head>
     <body>
-        <img src="Logo.svg" alt="Combat LAN Logo" style="width:40%">
-        <h1>Combat LAN v1.0 - October 30, 2015<br> (Special Halloween Edition!)</h1>
-     
-       <a href="https://www.facebook.com/events/1685111535077924/"><button>RSVP</button></a>
-        <footer><p>Copyright &copy; 2015 Combat LAN</p></footer>
+    <div>
+     <div style="float:left; width:40%; padding:50px"><img src="Logo.svg" alt="Combat LAN Logo" width="70%">
+             <div class="col-lg-12" id="flipclock-wrapper" style="margin-left:30px; margin-top:30px;">
+                    <div class="clock"></div>
+                </div>
+       <h1 style="margin:50px 0px">Combat LAN v2.0 <br> Friday, December 31 - Sunday, January 3<br> (New Year's Special Edition!)</h1>
+
+       <a href="https://www.facebook.com/events/1939487152943537/"><button style="background-color:#ff9f00; color:white; width:100%; padding:15px 0px;">Get Tickets</button></a>
+       <br>
+       
+       </div>
+        <div style="float:left;">
+                <iframe src="http://mapbuildr.com/frame/dof0ky" frameborder="0" width="1040px" height="970px"></iframe>
+        </div>
+        </div>
     </body>
+              
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+            <script src="assets/js/flipclock.js"></script>
+            <!--Flipclock-->
+            <script type="text/javascript">
+                // Grab the current date
+                var currentDate = new Date();
+
+                // Set some date in the future. In this case, it's always Jan 1
+                var futureDate  = new Date(2015, 11, 31);
+
+                // Calculate the difference in seconds between the future and current date
+                var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+                var clock = $('.clock').FlipClock(diff, {
+                    clockFace: 'DailyCounter',
+                    countdown: true
+                });
+            </script>
+            </body>
 </html>
