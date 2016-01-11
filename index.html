@@ -5,14 +5,27 @@
        <style>
            body {
            text-align: center;
-           background-color: darkgrey;
+           background-image: url(assets/img/background.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
            
             
+          
            }
            
+        a{
+         color:gold;
+        }
+        
+        a:visited{
+         color:grey;
+        }
+        
            h1 {
            font-family: helvetica;
-            color:white;
+           color:white;
            }
            
            
@@ -35,19 +48,21 @@ padding: 0;
    </head>
     <body>
     <div>
-     <div style="float:left; width:40%; padding:50px"><img src="Logo.svg" alt="Combat LAN Logo" width="70%">
-             <div class="col-lg-12" id="flipclock-wrapper" style="margin-left:30px; margin-top:30px;">
+     <div style="width:40%; margin:0px auto; margin-top:100px;"><img src="Logo.svg" alt="Combat LAN Logo" width="70%">
+             <div class="col-lg-12" id="flipclock-wrapper" style="margin-left:70px; margin-top:30px;">
                     <div class="clock"></div>
                 </div>
-       <h1 style="margin:50px 0px">Combat LAN v2.0 <br> Friday, December 31 - Sunday, January 3<br> (New Year's Special Edition!)</h1>
+       <h1 style="margin:50px 0px">Combat LAN v3.0 <br> Friday, February 5 - Sunday, February 7<br> (now with more <a href="http://www.downloadmorewam.com/">detotated wam</a>!)</h1>
 
-       <a href="https://www.facebook.com/events/1939487152943537/"><button style="background-color:#ff9f00; color:white; width:100%; padding:15px 0px;">Get Tickets</button></a>
+       <a href="https://www.facebook.com/groups/532020093630367/" style="font-family:sans-serif; size: 14px;"><button style="background-color:#ff9f00; color:white; width:100%; padding:15px 0px;">Group Discussion</button></a>
        <br>
+       <br>
+       <h3 style="font-family:sans-serif; color:white;">Previous LANs: 
+      <a href="https://www.facebook.com/media/set/?set=oa.555671481265228&type=1">V1.0</a> |  <a href="https://www.facebook.com/media/set/?set=oa.555672724598437&type=1">V2.0</a> 
+       <br></h3>
        
        </div>
-        <div style="float:left;">
-                <iframe src="http://mapbuildr.com/frame/dof0ky" frameborder="0" width="1040px" height="970px"></iframe>
-        </div>
+        
         </div>
     </body>
               
@@ -61,7 +76,7 @@ padding: 0;
                 var currentDate = new Date();
 
                 // Set some date in the future. In this case, it's always Jan 1
-                var futureDate  = new Date(2015, 11, 31);
+                var futureDate  = new Date(2016, 2, 5);
 
                 // Calculate the difference in seconds between the future and current date
                 var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
